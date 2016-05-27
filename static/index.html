@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="controlYourLife" >
+  <head>
+    <meta charset="utf-8">
+    <title>Controll your life</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="lib/assets/stylesheets/angular-material.min.css">
+    <link rel="stylesheet" href="lib/assets/stylesheets/icon.css?family=Material+Icons">
+  </head>
+  <body>
+    <div ng-controller="AppCtrl" ng-controller="DefaultCtrl" layout="row" layout-fill ng-cloak>
+      <nav-lateral></nav-lateral>
+      <section layout="column" role="main" flex>
+        <menu-top></menu-top>
+        <section id="content" role="content" layout="column" layout-padding md-scroll-y>
+          <content-main></content-main>
+        </section>
+      </section>
+    </div>
+  </body>
+
+  <!-- Libs -->
+  <script src="lib/assets/javascripts/angular.min.js"></script>
+  <script src="lib/assets/javascripts/angular-material.min.js"></script>
+  <script src="lib/assets/javascripts/angular-animate.min.js"></script>
+  <script src="lib/assets/javascripts/angular-aria.min.js"></script>
+  <!-- finish Libs -->
+
+  <!-- App -->
+  <script src="lib/scripts/app.js"></script>
+  <script src="lib/scripts/services/main.js"></script>
+  <script src="lib/scripts/controllers/main.js"></script>
+  <script src="lib/scripts/controllers/default.js"></script>
+  <script src="lib/scripts/controllers/app.js"></script>
+  <script src="lib/scripts/directives/main.js"></script>
+  <script src="lib/scripts/directives/defaults.js"></script>
+  <!-- finish APP -->
+</html>
