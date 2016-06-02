@@ -1,16 +1,19 @@
 'use strict';
 
 angular.module('controlYourLife')
-.controller('AppCtrl', function($scope) {
+.controller('AppCtrl', function($scope, $mdSidenav) {
 
   $scope.selected = [];
-
+  $scope.toggleSidenav = function(menu) {
+      $mdSidenav(menu).toggle();
+  },
   $scope.toggle = function(item, list) {
+    console.log('togle');
     var idx = list.indexOf(item);
     if (idx > -1) list.splice(idx, 1);
     else list.push(item);
   };
-  
+
   $scope.data = {
     title: 'Dashboard',
     user: {

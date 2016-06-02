@@ -8,7 +8,9 @@
 angular
   .module('controlYourLife', [
     'controlYourLife.services', 'controlYourLife.directives', // App
-    'ngMaterial' // Material
+    'ngMaterial', // Material
+    'firebase', // Firebase
+    'ngMdIcons' // Icons
   ])
   .constant("AppConfig", {
     "api_url": "http://localhost:3000",

@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="controlYourLife" >
+<html>
   <head>
     <meta charset="utf-8">
     <title>Controll your life</title>
@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="lib/assets/stylesheets/angular-material.min.css">
     <link rel="stylesheet" href="lib/assets/stylesheets/icon.css?family=Material+Icons">
   </head>
-  <body>
-    <div ng-controller="AppCtrl" ng-controller="DefaultCtrl" layout="row" layout-fill ng-cloak>
-      <nav-lateral></nav-lateral>
-      <section layout="column" role="main" flex>
-        <menu-top></menu-top>
-        <section id="content" role="content" layout="column" layout-padding md-scroll-y>
-          <content-main></content-main>
-        </section>
+  <body ng-app="controlYourLife" ng-controller="AppCtrl" ng-controller="DefaultCtrl" layout="row" layout-fill ng-cloak>
+    <nav-lateral></nav-lateral>
+    <section layout="column" role="main" flex>
+      <menu-top></menu-top>
+      <section id="content" role="content" layout="column" layout-padding md-scroll-y>
+        <content-main></content-main>
       </section>
-    </div>
+    </section>
   </body>
 
   <!-- Libs -->
@@ -26,14 +24,19 @@
   <script src="lib/assets/javascripts/angular-material.min.js"></script>
   <script src="lib/assets/javascripts/angular-animate.min.js"></script>
   <script src="lib/assets/javascripts/angular-aria.min.js"></script>
+  <script src="lib/assets/javascripts/angular-material-icons.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
   <!-- finish Libs -->
 
   <!-- App -->
   <script src="lib/scripts/app.js"></script>
   <script src="lib/scripts/services/main.js"></script>
+  <script src="lib/scripts/services/auth.js"></script>
+  <script src="lib/scripts/services/generic_functions.js"></script>
   <script src="lib/scripts/controllers/main.js"></script>
-  <script src="lib/scripts/controllers/default.js"></script>
   <script src="lib/scripts/controllers/app.js"></script>
+  <script src="lib/scripts/controllers/auth.js"></script>
   <script src="lib/scripts/directives/main.js"></script>
   <script src="lib/scripts/directives/defaults.js"></script>
   <!-- finish APP -->
